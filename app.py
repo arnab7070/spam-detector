@@ -26,7 +26,7 @@ def predict(comment):
         new_comment = vectorizer.transform([comment])
         # Predict using the loaded model
         prediction = loaded_model.predict(new_comment)
-        return "Spam" if prediction[0] == 1 else "Not spam"
+        return 1 if prediction[0] == 1 else 0
     except Exception as e:
         return f"Unexpected Error: {str(e)}"
 
