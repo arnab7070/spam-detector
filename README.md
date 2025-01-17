@@ -156,11 +156,19 @@ makePrediction(commentText);
 - **Request Body**:
   - `comment` (string): The text comment for prediction.
 - **Response**:
-  ```json
-  {
-    "result": 0 or 1
-  }
-  ```
+  1. Response 1:
+     ```json
+     {
+       "result": 0
+     }
+     ```
+  2. Response 2:
+     ```json
+     {
+       "result": 1
+     }
+     ```
+
 
 ---
 
